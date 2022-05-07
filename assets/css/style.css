@@ -1,0 +1,63 @@
+/*Feito por mim*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #222;
+    color: #FFF;
+    min-height: 100vh;
+    background-image: url('../image/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.middle {
+    width:100%;
+    text-align:center;
+    text-shadow: 0 0 5px #777;
+}
+
+.middle h1 {
+    font-size:120px;
+    font-weight:normal;
+}
+
+.middle h3 {
+    font-size: 50px;
+    font-weight:normal;
+}
+
+.bottom {
+    height: 100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.bottom .author {
+    overflow:hidden;
+    height:0px;
+    transition: all ease .2s;
+}
+
+.bottom .phrase:hover .author {
+    height:20px;
+}
+
+@media (max-width:600px) {
+    .middle h1 {
+        font-size:80px;
+    }
+    .middle h3 {
+        font-size:40px;
+    }
+}
